@@ -1,0 +1,68 @@
+.card-container {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  justify-content: space-around; /* Space columns evenly within the container */
+  gap: 30px; /* Space between grid items */
+  padding: 30px; /* Padding inside the container */
+}
+
+.card {
+  border: 2px solid #ededed;
+  border-radius: 30px;
+  border-color: rgb(0, 4, 255);
+  padding: 20px;
+  cursor: pointer;
+  text-align: center; /* Center-align content */
+  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.product-image {
+  width: 100%; /* Ensure image takes full width of its container */
+  height: auto; /* Let the image maintain its natural aspect ratio */
+  border-radius: 30px;
+  margin-bottom: 1rem; /* Space below the image */
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center; /* Center-align stars and reviews */
+  align-items: center;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.price {
+  margin-bottom: 1rem;
+}
+
+.prev-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.new-price {
+  color: green;
+  font-weight: bold;
+}
+
+.company,
+.category {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
